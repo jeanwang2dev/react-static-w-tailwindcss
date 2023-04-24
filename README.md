@@ -4,7 +4,7 @@
 
     * scrimba course: Learn React (with Bob Ziroll) 
     * project: build a react info site
-    * figma mockup(https://www.figma.com/file/xA1rJVQOorqMW6xjGdBLcI/ReactFacts?node-id=0-4&t=G0n6FBKWCvy4jOJS-0)
+    * [figma mockup](https://www.figma.com/file/xA1rJVQOorqMW6xjGdBLcI/ReactFacts?node-id=0-4&t=G0n6FBKWCvy4jOJS-0)
 
 ### Notes
 
