@@ -15,8 +15,46 @@
     .h1_font {
         @apply font-inter font-bold leading-12 text-3xl tracking-tighter;
     }
+
+    nav {
+        @apply flex justify-between items-center py-8 px-6
+    }
+
+    .toggler-slider {
+        @apply flex justify-start items-center border border-black w-7 h-3.5 bg-darkGray rounded-[8px] cursor-pointer box-content;
+    }
+
+    .toggler-slider-circle {
+        @apply w-4 h-4 bg-white rounded-full
+    }
+
+    nav.dark .toggler-slider-circle {
+        @apply bg-darkGray
+    }
+
+    nav.dark .toggler-slider {
+        @apply flex justify-end bg-white
+    }
+
+    nav.dark {
+        @apply bg-darkGray;
+    }
+
+    nav.dark .toggler-slider {
+        @apply border-white bg-white;
+    }
+
+    .toggler-light, .toggler-dark {
+        @apply text-darkGray text-base mr-2
+    }
+
+    nav.dark .toggler-light,
+    nav.dark .toggler-dark {
+        @apply text-white
+    }
     
 }
+
 
 .main {
     background-image: url("./assets/halfLogo.png");
