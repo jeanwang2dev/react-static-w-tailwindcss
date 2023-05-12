@@ -5,7 +5,7 @@ import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true)
     function toggleDarkMode(){
         setIsDarkMode(prevMode => !prevMode)
     }
