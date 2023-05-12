@@ -3,6 +3,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    main {
+        background-image: url("./assets/react-icon-light.png");
+        background-repeat: no-repeat;
+        background-size: 125px;
+        background-position: right 53%;
+    }
+
+    main.dark {
+        background-image: url("./assets/react-icon-dark.png");
+        background-repeat: no-repeat;
+        background-size: 125px;
+        background-position: right 53%;
+    }
+    
+    li {
+        list-style-image: url("./assets/blueDot.png");
+        padding-left: 10px;
+    }
+
+    li {
+        @apply text-darkGray;
+    }
+
+    nav.dark li,
+    main.dark li{
+        @apply text-white
+    }
+
+
+    
+}
+
 @layer components{
     .logo_font {
         @apply font-inter font-normal font-bold text-2xl;
@@ -13,11 +46,23 @@
     }
 
     .h1_font {
-        @apply font-inter font-bold leading-12 text-3xl tracking-tighter;
+        @apply font-inter font-bold leading-12 text-3xl tracking-tighter text-darkGray;
+    }
+
+    main.dark .h1_font {
+        @apply text-white
+    }
+
+    main {
+        @apply flex justify-center bg-white text-white pt-14 pb-32
+    }
+
+    main.dark {
+        @apply bg-lightGray
     }
 
     nav {
-        @apply flex justify-between items-center py-8 px-6
+        @apply flex justify-between items-center py-8 px-6 drop-shadow-lg bg-white
     }
 
     .toggler-slider {
@@ -56,17 +101,7 @@
 }
 
 
-.main {
-    background-image: url("./assets/halfLogo.png");
-    background-repeat: no-repeat;
-    background-size: 125px;
-    background-position: right 53%;
-}
 
-li {
-    list-style-image: url("./assets/blueDot.png");
-    padding-left: 10px;
-}
 
 
 

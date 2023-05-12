@@ -16,7 +16,7 @@ function App() {
         darkMode={isDarkMode}
         toggleDarkMode={toggleDarkMode}
       />
-      <MainContent />
+      <MainContent darkMode={isDarkMode} />
       <Footer />
     </div>
   )

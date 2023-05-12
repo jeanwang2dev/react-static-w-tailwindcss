@@ -1,8 +1,8 @@
 import React from 'react';
 
-function MainContent() {
+function MainContent(props) {
     return (
-        <div className="main flex justify-center bg-lightGray text-white pt-14 pb-32">
+        <main className={props.darkMode ? "dark": ""}>
             <div className="flex flex-col">
                 <h1 className="h1_font mb-11">Fun facts about React</h1>
                 <ul className="list-disc space-y-5 pl-10 list-outside text-base w-96">
@@ -13,7 +13,7 @@ function MainContent() {
                     <li className="leading-5"> <span>Powers thosands of enterprise apps, including mobile apps</span></li>
                 </ul>
             </div>
-        </div>
+        </main>
     )
 }
 
